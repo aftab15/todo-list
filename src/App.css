@@ -6,6 +6,20 @@
 
 .names{
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-align: center;
+}
+
+
+.farm1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.farm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -85,6 +99,7 @@ form button:hover {
 }
 .todo-item {
   padding: 0rem 0.5rem;
+  overflow-wrap: anywhere;
 }
 
 .fa-trash,
@@ -143,3 +158,32 @@ select {
   transform: scale(1.5);
 }
 */
+.todo-input{
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .todo-input{
+    width: 80%;
+  }
+  .names{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    text-align: center;
+    font-size: larger;
+    padding: 0px 15px;
+  }
+  .farm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+  .farm1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1
+  }
+  
+  
+}
